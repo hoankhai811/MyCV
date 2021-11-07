@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>My CV</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="grid wide">
+        <div class="intro">
+          <div class="intro__avatar">
+            <div class="intro__avatar-img">
+              <img
+                class="avatar-img__img"
+                src="./assets/img/female.jpg"
+                alt=""
+              />
+            </div>
+            <div class="intro__avatar-name">
+              <div class="avatar-name__title">
+                <h1 class="avatar-name__heading">Châu Khải Hoàn</h1>
+                <p class="avatar-name__job">Sinh viên</p>
+              </div>
+              <ul class="intro-user-right__social">
+                <li class="intro-user-right__social-icon--facebook">
+                  <a
+                    href="https://www.facebook.com/hoankhai811/"
+                    class="link--facebook"
+                  >
+                    <i class="fab fa-facebook-f tooltipIcon--facebook"></i>
+                  </a>
+                  <div class="tooltip--facebook">Facebook</div>
+                </li>
+                <!-- <li class="intro-user-right__social-icon--tiktok">
+                  <a href="#" class="link--tiktok">
+                    <i class="fab fa-tiktok tooltipIcon--tiktok"></i>
+                  </a>
+                  <div class="tooltip--tiktok">TikTok</div>
+                </li> -->
+                <li class="intro-user-right__social-icon--instagram">
+                  <a
+                    href="https://www.instagram.com/crisss.81/"
+                    class="link--instagram"
+                  >
+                    <i class="fab fa-instagram tooltipIcon--instagram"></i>
+                  </a>
+                  <div class="tooltip--instagram">Instagram</div>
+                </li>
+                <li class="intro-user-right__social-icon--github">
+                  <a href="https://github.com/hoankhai811" class="link--github">
+                    <i class="fab fa-github tooltipIcon--github"></i>
+                  </a>
+                  <div class="tooltip--github">Git Hub</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="intro__contact">
+            <ul class="intro__contact-list">
+              <li class="intro__contact-items">
+                <h3 class="intro__contact-heading">Email</h3>
+                <span class="intro__contact-desc"> cris.join10@gmail.com </span>
+              </li>
+              <li class="intro__contact-items">
+                <h3 class="intro__contact-heading">Số điện thoại</h3>
+                <span class="intro__contact-desc"> 09644xxxxx</span>
+              </li>
+            </ul>
+            <ul class="intro__contact-list">
+              <li class="intro__contact-items">
+                <h3 class="intro__contact-heading">Ngày sinh</h3>
+                <span class="intro__contact-desc"> 08/11/2000 </span>
+              </li>
+              <li class="intro__contact-items">
+                <h3 class="intro__contact-heading">Địa chỉ</h3>
+                <span class="intro__contact-desc"> TP.Hồ Chí Minh, Q5 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col l-2 m-12 c-12">
+            <div class="content__navigation">
+              <ul class="content__list">
+                <li class="content__items content__items--active">
+                  <a href="#" class="content__item">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                      src="https://cdn.lordicon.com/eszyyflr.json"
+                      trigger="hover"
+                      colors="primary:#121331,secondary:#4f1091"
+                      style="width: 65px; height: 65px"
+                      class="content__item-animation-icon"
+                    >
+                    </lord-icon>
+                    <span class="content__item-icon-desc">MYSEFL</span>
+                  </a>
+                </li>
+                <li class="content__items">
+                  <a href="#" class="content__item">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                      src="https://cdn.lordicon.com/wxnxiano.json"
+                      trigger="hover"
+                      colors="primary:#121331,secondary:#4f1091"
+                      style="width: 65px; height: 65px"
+                      class="content__item-animation-icon"
+                    >
+                    </lord-icon>
+                    <span class="content__item-icon-desc">STUDY ROAD</span>
+                  </a>
+                </li>
+                <li class="content__items">
+                  <a href="#" class="content__item">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                      src="https://cdn.lordicon.com/nocovwne.json"
+                      trigger="hover"
+                      colors="primary:#121331,secondary:#4f1091"
+                      style="width: 65px; height: 65px"
+                      class="content__item-animation-icon"
+                    >
+                    </lord-icon>
+                    <span class="content__item-icon-desc">MYSKILL</span>
+                  </a>
+                </li>
+                <li class="content__items">
+                  <a href="#" class="content__item">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                      src="https://cdn.lordicon.com/iltqorsz.json"
+                      trigger="hover"
+                      colors="primary:#121331,secondary:#4f1091"
+                      style="width: 65px; height: 65px"
+                      class="content__item-animation-icon"
+                    >
+                    </lord-icon>
+                    <span class="content__item-icon-desc">ATTEMP FUTURE</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-10 m-12 c-12 wrapper-content">
+            <!-- Introduce -->
+            <ul class="extend__content extend__content--active">
+              <li class="extend__content-list-intro">
+                <h1 class="extend__content-heading">INTRODUCE</h1>
+                <p class="extend__content-sub-title">
+                  Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                  chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này..., cho
+                  đến này tập trung vào con đường Web Developer.
+                </p>
+                <h1 class="extend__content-heading">PROJECT</h1>
+                <div class="row project__list">
+                  <div class="col l-6 m-12 c-12 project__items">
+                    <a href="#" class="project__item">
+                      <div class="wrapper">
+                        <img
+                          src="https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                          class="project__img"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="project__sub-title">The band</h5>
+                    </a>
+                  </div>
+                  <div class="col l-6 m-12 c-12 project__items">
+                    <a href="#" class="project__item">
+                      <div class="wrapper">
+                        <img
+                          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                          class="project__img"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="project__sub-title">The band</h5>
+                    </a>
+                  </div>
+                  <div class="col l-6 m-12 c-12 project__items">
+                    <a href="#" class="project__item">
+                      <div class="wrapper">
+                        <img
+                          src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=363&q=80"
+                          class="project__img"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="project__sub-title">The band</h5>
+                    </a>
+                  </div>
+                  <div class="col l-6 m-12 c-12 project__items">
+                    <a href="#" class="project__item">
+                      <div class="wrapper">
+                        <img
+                          class="project__img"
+                          src="https://images.unsplash.com/photo-1474112704314-8162b7749a90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="project__sub-title">The band</h5>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <h1 class="extend__content-heading">INSPIRATIONS</h1>
+              <div class="slide">
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="https://www.incimages.com/uploaded_files/image/1920x1080/feature-80-Musk-1-pan_5343.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Elon Musk</h4>
+                    <p class="slide-text--para">
+                      "Công nghệ là thứ gần gũi nhất với ma thuật còn tồn tại
+                      trên thế giới này"
+                    </p>
+                  </div>
+                </div>
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="https://cdn.tgdd.vn/Files/2019/05/16/1167070/1_800x600.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Satya Nadella</h4>
+                    <p class="slide-text--para">
+                      "Ngành công nghiệp của chúng ta không tôn trọng truyền
+                      thống - nó chỉ tôn trọng sự đổi mới"
+                    </p>
+                  </div>
+                </div>
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="https://media.travelmag.vn/center/600x400/files/news/2021/04/01/tam-guong-nhung-nguoi-thanh-cong-cung-tung-phai-lam-cong-viec-muu-sinh-kiem-song-155402.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Reed Hastings</h4>
+                    <p class="slide-text--para">
+                      "Thời đại đồ đá. Thời đại đồ đông. Thời đại đồ sắt. Chúng
+                      ta xác định toàn bộ sử thi của nhân loại bằng công nghệ mà
+                      họ sử dụng"
+                    </p>
+                  </div>
+                </div>
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/200px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Mark Zuckerberg</h4>
+                    <p class="slide-text--para">
+                      "Rủi ro lớn nhất là khi bạn không chấp nhận bất kỳ rủi ro
+                      nào. Trong một thế giới thay đổi thực sự nhanh chóng,
+                      chiến lược duy nhất được đảm bảo thất bại là không chấp
+                      nhận rủi ro."
+                    </p>
+                  </div>
+                </div>
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="https://cafefcdn.com/thumb_w/650/2018/6/25/photo1529935983902-1529935983902994740514.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Tim Cook</h4>
+                    <p class="slide-text--para">
+                      "Công việc mang ý nghĩa mới khi bạn cảm thấy đang đi đúng
+                      hướng. Nếu không, nó chỉ là một công việc và cuộc sống
+                      dường như quá ngắn ngủi cho điều đó."
+                    </p>
+                  </div>
+                </div>
+                <div class="slide-users">
+                  <div class="slide-avatar">
+                    <img
+                      src="http://vipbrandacademy.com/wp-content/uploads/2020/09/chuyen-vip-tg-20200831-bai7a.jpg"
+                      alt=""
+                      class="slide-avatar--img"
+                    />
+                  </div>
+                  <div class="slide-text">
+                    <h4 class="slide-text--title">Michael Dell</h4>
+                    <p class="slide-text--para">
+                      "Bạn không cần phải là một thiên tài, hay một người có tầm
+                      nhìn, hay thậm chí tốt nghiệp đại học để thành công. Bạn
+                      chỉ cần có nền tảng và ước mơ."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <!-- Study -->
+            <ul class="extend__content">
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--3"></div>
+
+                <h1 class="extend__content-heading">STUDY</h1>
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/education.png"
+                    alt="icon-ducation"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Education</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--4"></div>
+
+                <h1 class="extend__content-heading">EXPERIENCE</h1>
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/briefcase.png"
+                    alt="icon-bag"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Experience</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- Skill -->
+            <ul class="extend__content">
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--5"></div>
+
+                <h1 class="extend__content-heading">SKILLS</h1>
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/soft-skills.png"
+                    alt="icon-ducation"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Soft Skills</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--6"></div>
+
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/skills.png"
+                    alt="icon-ducation"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Hard Skills</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- Attemp -->
+            <ul class="extend__content">
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--1"></div>
+                <h1 class="extend__content-heading">ATTEMP</h1>
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/track.png"
+                    alt="icon-ducation"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Short-Term Goal</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+              <li class="extend__content-list">
+                <div class="after__progress-bar-attemp--2"></div>
+                <h1 class="extend__content-heading">ATTEMP</h1>
+                <div class="extend__content-desc">
+                  <img
+                    src="./assets/img/goal.png"
+                    alt="icon-bag"
+                    class="extend__content-img--education"
+                  />
+                  <span class="extend__content-desc-text">Long-Term-Goal</span>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+                <div class="extend__content-title-wrapper">
+                  <h4 class="extend__content-title">
+                    Trường cao đẳng kỹ thuật cao thắng
+                  </h4>
+                  <p class="extend__content-desc-sub-title">2019 - nay</p>
+                  <p class="extend__content-sub-title">
+                    Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập
+                    chưa rõ ràng định hướng sẽ làm gì trong ngành nghề này...,
+                    cho đến này tập trung vào con đường Web Developer.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="circle__1"></div>
+      <div class="circle__2"></div>
+      <div class="circle__3"></div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
