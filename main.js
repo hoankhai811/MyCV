@@ -21,7 +21,7 @@ window.addEventListener("scroll", function (e) {
   if (scrolled >= 360) {
     navbar.setAttribute(
       "style",
-      "position: fixed; top: 0; width: 163.32px; margin-top: 30px; transition: all 0.2s ease;"
+      "position: fixed; top: 0; width: 163.32px; margin-top: 30px; transition: all 0.2s ease;border-radius: 30px"
     );
   } else {
     navbar.setAttribute(
@@ -45,3 +45,29 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   });
 });
+
+// load hình ảnh source lazy-src
+
+function loadImage(img) {
+  const url = img.getAttribute("lazy-src");
+  img.setAttribute("src", url);
+}
+
+function ready() {
+  if ("IntersectionObserver" in window) {
+    var srcImgs = document.querySelectorAll("[lazy-src]");
+    let observer = new IntersectionObserver(function (entries) {
+      entries.forEach((image) => {
+        if (image.isIntersecting) {
+          loadImage(image.target);
+        }
+      });
+    });
+
+    srcImgs.forEach(function (item) {
+      observer.observe(item);
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", ready());

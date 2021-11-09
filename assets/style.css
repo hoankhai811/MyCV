@@ -897,4 +897,10 @@
   .slide-text {
     margin: 0;
   }
+  .content__list {
+    margin-top: -9px;
+  }
+  .content__navigation {
+    border-radius: unset !important;
+  }
 }
