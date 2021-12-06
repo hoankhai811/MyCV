@@ -578,7 +578,9 @@
 
 .project__items:hover .modal__hover-lists {
   opacity: 1;
-  top: -50%;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal__hover-lists {
   position: absolute;
@@ -896,6 +898,9 @@
 }
 
 @media (max-width: 739px) {
+  .modal__hover-lists {
+    width: 350px;
+  }
   .col {
     padding: 0;
     margin: 0;
