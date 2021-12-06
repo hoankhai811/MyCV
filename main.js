@@ -1,6 +1,10 @@
 const clickLi = document.querySelectorAll(".content__items");
 const navbar = document.querySelector(".content__navigation");
 const extendUl = document.querySelectorAll(".extend__content");
+const progressBars = document.querySelectorAll(
+  ".container-skills-progress-bar"
+);
+const skillsSection = document.querySelector(".skills-section");
 
 //add active cho navbar item
 clickLi.forEach((items, index) => {
@@ -71,3 +75,32 @@ function ready() {
 }
 
 document.addEventListener("DOMContentLoaded", ready());
+
+// Skills
+function showProgress() {
+  progressBars.forEach((progressBar) => {
+    const value = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${value}%`;
+    progressBar.style.transition = "all 0.4s linear";
+  });
+}
+
+function hideProgress() {
+  progressBars.forEach((p) => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+    p.style.transition = "all 0.2s linear";
+  });
+}
+
+window.addEventListener("scroll", () => {
+  const sectionPositon = skillsSection.getBoundingClientRect().top;
+  const screenPositon = window.innerHeight;
+
+  if (sectionPositon < screenPositon) {
+    showProgress();
+  } else {
+    hideProgress();
+  }
+});
